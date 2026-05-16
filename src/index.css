@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom fonts and styles only below */
+body {
+    font-family: 'GeneralSans-Variable';
+}
+
+@font-face {
+    font-family: 'GeneralSans-Variable';
+    src: url('../fonts/GeneralSans-Variable.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Variable.woff') format('woff'),
+        url('../fonts/GeneralSans-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+/* ... rest of your @font-face rules ... */
+
+/* Scroll to top style */
+.scrollToTop {
+    @apply bg-indigo-600;
+    @apply text-white;
+    position: fixed;
+    width: 100%;
+    /* ... rest of scrollToTop ... */
+}
