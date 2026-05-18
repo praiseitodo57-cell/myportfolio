@@ -9,7 +9,7 @@ import TailwindImage from '../images/brands/tailwind-css.png';
 import NodeImage from '../images/brands/node-logo.png';
 import ExpressImage from '../images/brands/express-logo.png';
 import MongoImage from '../images/brands/mogodb.png';
-import PostgresImage from '../images/brands/Logo_postgresql.png';
+import PostgresImage from '../images/brands/Logo_PostgreSQL.png';
 import SupabaseImage from '../images/brands/supabase.png';
 import GitImage from '../images/brands/git.jpg';
 import GitHubImage from '../images/brands/github.jpg';
