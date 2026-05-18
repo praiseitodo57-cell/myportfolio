@@ -7,6 +7,7 @@ import MobileImage2 from '../images/brands/mobile-project-2.jpg';
 import UIImage1 from '../images/brands/ui-project-1.png';
 import UIImage2 from '../images/brands/ui-project-2.jpg';
 import UIImage3 from '../images/brands/Ai.jpg';
+import UIImage4 from '../images/brands/stock.jpeg';
 
 export const projectsData = [
 	{
@@ -114,5 +115,19 @@ export const projectsData = [
 		},
 		githubLink: 'https://github.com/praiseitodo57-cell/Holex_chat_bot',
 		liveDemo: 'https://holex-chat-bot.vercel.app',
+	},
+
+	{
+		id: 9,
+		title: 'Stock Tracker',
+		category: 'Web Application',
+		img: UIImage4,
+		ProjectHeader: {
+			title: 'Stock Tracker',
+			publishDate: 'Dec 5, 2021',
+			tags: 'UI / Frontend',
+		},
+		githubLink: 'https://github.com/praiseitodo57-cell/Stock_Traker',
+		liveDemo: 'https://stock-traker-pearl.vercel.app',
 	},
 ];
