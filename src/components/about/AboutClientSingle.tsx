@@ -1,4 +1,4 @@
-const AboutClientSingle = ({ title, image }) => {
+const AboutClientSingle = ({ title, image }: { title: string; image: string }) => {
 	return (
 		<div className="flex flex-col items-center justify-center gap-3 p-4 bg-secondary-light dark:bg-ternary-dark border border-ternary-light dark:border-ternary-dark shadow-sm rounded-xl cursor-pointer hover:shadow-md transition duration-300 hover:-translate-y-1">
 			<div className="w-10 h-10 flex items-center justify-center">

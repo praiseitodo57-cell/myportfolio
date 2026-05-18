@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Button from '../reusable/Button';
 import FormInput from '../reusable/FormInput';
 
 const SERVICE_ID = 'service_hw0vgm8';
@@ -8,22 +7,21 @@ const TEMPLATE_ID = 'template_5ct92w7';
 const PUBLIC_KEY = 'GEAZjXc9Rd44dsSCN';
 
 const ContactForm = () => {
-	const formRef = useRef();
+	const formRef = useRef<HTMLFormElement>(null);
 	const [sending, setSending] = useState(false);
 	const [sent, setSent] = useState(false);
 	const [error, setError] = useState(false);
 
-	const sendEmail = (e) => {
+	const sendEmail = (e: React.FormEvent) => {
 		e.preventDefault();
+		if (!formRef.current) return;
 		setSending(true);
 		setError(false);
 
-		emailjs
-			.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
+		emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
 			.then(() => {
 				setSending(false);
 				setSent(true);
-				formRef.current.reset();
 			})
 			.catch(() => {
 				setSending(false);
@@ -86,7 +84,6 @@ const ContactForm = () => {
 						></textarea>
 					</div>
 
-					{/* Status messages */}
 					{sent && (
 						<p className="mt-4 text-green-500 font-medium">
 							Message sent successfully! I'll get back to you soon.

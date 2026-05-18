@@ -12,7 +12,7 @@ import Button from '../reusable/Button';
 const AppHeader = () => {
 	const [showMenu, setShowMenu] = useState(false);
 	const [showModal, setShowModal] = useState(false);
-	const [activeTheme, setTheme] = useThemeSwitcher();
+	const [activeTheme, setTheme] = useThemeSwitcher() as [string, (theme: string) => void];
 
 	function toggleMenu() {
 		if (!showMenu) {
@@ -186,7 +186,7 @@ const AppHeader = () => {
 				{showModal ? (
 					<HireMeModal
 						onClose={showHireMeModal}
-						onRequest={showHireMeModal}
+						
 					/>
 				) : null}
 

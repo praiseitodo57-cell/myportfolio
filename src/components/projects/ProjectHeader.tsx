@@ -3,7 +3,7 @@ import { FiClock, FiTag } from 'react-icons/fi';
 import SingleProjectContext from '../../context/SingleProjectContext';
 
 const ProjectSingleHeader = () => {
-	const { singleProjectData } = useContext(SingleProjectContext);
+	const { singleProjectData } = useContext(SingleProjectContext) as any;
 
 	return (
 		<div>

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { FiX } from 'react-icons/fi';
 import emailjs from '@emailjs/browser';
-import Button from '../reusable/Button';
+
 
 const SERVICE_ID = 'service_hw0vgm8';
 const TEMPLATE_ID = 'template_5ct92w7';
@@ -15,14 +15,19 @@ const selectOptions = [
 	'Branding',
 ];
 
-const HireMeModal = ({ onClose, onRequest }) => {
-	const formRef = useRef();
+// 1. Remove onRequest from props (unused)
+// 2. Type the sendEmail parameter
+// 3. Add null check for formRef.current
+
+const HireMeModal = ({ onClose }: { onClose: () => void }) => {
+	const formRef = useRef<HTMLFormElement>(null);
 	const [sending, setSending] = useState(false);
 	const [sent, setSent] = useState(false);
 	const [error, setError] = useState(false);
 
-	const sendEmail = (e) => {
+	const sendEmail = (e: React.FormEvent) => {
 		e.preventDefault();
+		if (!formRef.current) return;
 		setSending(true);
 		setError(false);
 
@@ -31,7 +36,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 			.then(() => {
 				setSending(false);
 				setSent(true);
-				formRef.current.reset();
+				formRef.current?.reset();
 				setTimeout(() => {
 					setSent(false);
 					onClose();
@@ -156,7 +161,6 @@ const HireMeModal = ({ onClose, onRequest }) => {
 								className="px-4 sm:px-6 py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-gray-200 dark:text-secondary-dark dark:hover:bg-primary-light rounded-md focus:ring-1 focus:ring-indigo-900 duration-500 cursor-pointer"
 								aria-label="Close Modal"
 							>
-								<Button title="Close" />
 							</span>
 						</div>
 					</div>

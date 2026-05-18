@@ -1,4 +1,3 @@
-import React from 'react';
 
 const FormInput = ({
 	inputLabel,
@@ -8,6 +7,14 @@ const FormInput = ({
 	inputName,
 	placeholderText,
 	ariaLabelName,
+}: {
+	inputLabel: string;
+	labelFor: string;
+	inputType: string;
+	inputId: string;
+	inputName: string;
+	placeholderText: string;
+	ariaLabelName: string;
 }) => {
 	return (
 		<div className="font-general-regular mb-4">

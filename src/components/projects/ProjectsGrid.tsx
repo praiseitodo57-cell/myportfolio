@@ -13,6 +13,14 @@ const ProjectsGrid = () => {
 		selectProject,
 		setSelectProject,
 		selectProjectsByCategory,
+	}: {
+		projects: any[];
+		searchProject: string;
+		setSearchProject: (value: string) => void;
+		searchProjectsByTitle: any[];
+		selectProject: string;
+		setSelectProject: (value: string) => void;
+		selectProjectsByCategory: any[];
 	} = useContext(ProjectsContext);
 
 	return (
@@ -83,7 +91,7 @@ const ProjectsGrid = () => {
 							id="name"
 							name="name"
 							type="search"
-							required=""
+							required
 							placeholder="Search Projects"
 							aria-label="Name"
 						/>

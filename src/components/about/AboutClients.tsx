@@ -1,4 +1,5 @@
 import AboutClientSingle from './AboutClientSingle';
+// @ts-ignore
 import { clientsData, clientsHeading } from '../../data/clientsData';
 
 const categories = [
@@ -32,7 +33,7 @@ const AboutClients = () => {
 			</p>
 
 			{categories.map((category) => {
-				const items = clientsData.filter((c) =>
+				const items = clientsData.filter((c:any) =>
 					category.ids.includes(c.id)
 				);
 				return (
@@ -48,7 +49,7 @@ const AboutClients = () => {
                     
 						{/* Cards grid */}
 						<div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-4">
-							{items.map((client) => (
+							{items.map((client: any) => (
 								<AboutClientSingle
 									key={client.id}
 									title={client.title}

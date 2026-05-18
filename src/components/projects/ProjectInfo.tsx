@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import SingleProjectContext from '../../context/SingleProjectContext';
 
 const ProjectInfo = () => {
-	const { singleProjectData  } = useContext(SingleProjectContext);
+	const { singleProjectData  } = useContext(SingleProjectContext) as any;
 
 	return (
 		<div className="block sm:flex gap-0 sm:gap-10 mt-14">
@@ -14,7 +14,7 @@ const ProjectInfo = () => {
 					</p>
 					<ul className="leading-loose">
 						{singleProjectData.ProjectInfo.CompanyInfo.map(
-							(info) => {
+							(info: any) => {
 								return (
 									<li
 										className="font-general-regular text-ternary-dark dark:text-ternary-light"
@@ -69,7 +69,7 @@ const ProjectInfo = () => {
 					</p>
 					<div className="flex items-center gap-3 mt-5">
 						{singleProjectData.ProjectInfo.SocialSharing.map(
-							(social) => {
+							(social: any) => {
 								return (
 									<a
 										key={social.id}
@@ -94,7 +94,7 @@ const ProjectInfo = () => {
 				<p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
 					{singleProjectData.ProjectInfo.ProjectDetailsHeading}
 				</p>
-				{singleProjectData.ProjectInfo.ProjectDetails.map((details) => {
+				{singleProjectData.ProjectInfo.ProjectDetails.map((details: any) => {
 					return (
 						<p
 							key={details.id}

@@ -2,26 +2,22 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
-const ProjectSingle = ({ title, category, image, githubLink, liveDemo }) => {
+const ProjectSingle = ({ title, category, image, githubLink, liveDemo }: { title: string; category: string; image: string; githubLink?: string; liveDemo?: string }) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
-			animate={{ opacity: 1, delay: 1 }}
-			transition={{
-				ease: 'easeInOut',
-				duration: 0.7,
-				delay: 0.15,
-			}}
-		>
+			animate={{ opacity: 1 }}
+           transition={{ duration: 0.7, delay: 1 }}
+		   >
 			<div className="rounded-xl shadow-lg hover:shadow-xl mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
 				<Link to="/projects/single-project" aria-label="Single Project">
 					<div className="w-full h-48 overflow-hidden rounded-t-xl">
-							<img
-								src={image}
-								className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-								alt="Single Project"
-							/>
-						</div>
+						<img
+							src={image}
+							className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+							alt="Single Project"
+						/>
+					</div>
 					<div className="text-center px-4 py-6">
 						<p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
 							{title}
