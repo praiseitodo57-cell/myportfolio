@@ -6,6 +6,7 @@ import MobileImage1 from '../images/brands/mobile-project-1.jpg';
 import MobileImage2 from '../images/brands/mobile-project-2.jpg';
 import UIImage1 from '../images/brands/ui-project-1.png';
 import UIImage2 from '../images/brands/ui-project-2.jpg';
+import UIImage3 from '../images/brands/Ai.jpg';
 
 export const projectsData = [
 	{
@@ -63,7 +64,7 @@ export const projectsData = [
 	{
 		id: 5,
 		title: 'Fintech website',
-		category: 'Mobile Application',
+		category: 'web application',
 		img: MobileImage1,
 		ProjectHeader: {
 			title: 'Fintech website',
@@ -88,7 +89,7 @@ export const projectsData = [
 	},
 
 	{
-		id: 6,
+		id: 7,
 		title: 'laundry/dry-cleaning website',
 		category: 'Web Application',
 		img: WebImage2,
@@ -99,5 +100,19 @@ export const projectsData = [
 		},
 		githubLink: 'https://github.com/praiseitodo57-cell/spraditech',
 		liveDemo: 'https://deeclean-fresh-laundry.lovable.app',
+	},
+
+	{
+		id: 8,
+		title: 'Holex Chat Bot',
+		category: 'Web Application',
+		img: UIImage3,
+		ProjectHeader: {
+			title: 'Holex Chat Bot',
+			publishDate: 'Dec 5, 2021',
+			tags: 'UI / Frontend',
+		},
+		githubLink: 'https://github.com/praiseitodo57-cell/Holex_chat_bot',
+		liveDemo: 'https://holex-chat-bot.vercel.app',
 	},
 ];
