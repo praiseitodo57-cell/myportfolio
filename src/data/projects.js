@@ -17,8 +17,7 @@ export const projectsData = [
 		img: WebImage2,
 		ProjectHeader: {
 			title: 'Chat bot',
-			publishDate: 'Jul 26, 2021',
-			tags: ' backend / Node.js',
+			tags: ' backend / Node.js/ Express / supabase',
 		},
 		githubLink: 'https://github.com/praiseitodo57-cell/church-engagement-bot',
 		liveDemo: 'https://church-engagement-bot.onrender.com',
@@ -30,8 +29,7 @@ export const projectsData = [
 		img: MobileImage2,
 		ProjectHeader: {
 			title: 'TASK-FLOW',
-			publishDate: 'Aug 14, 2021',
-			tags: 'Backend / Node.js',
+			tags: 'Backend / Node.js/ Express / Supabase',
 		},
 		githubLink: 'https://github.com/praiseitodo57-cell/task-flow',
 		//liveDemo: 'https://phoenix-agency.netlify.app',
@@ -43,8 +41,7 @@ export const projectsData = [
 		img: UIImage1,
 		ProjectHeader: {
 			title: 'TASK-FLOW-CLIENT',
-			publishDate: 'Sep 3, 2021',
-			tags: 'UI / UX Design',
+			tags: 'Next.js / TypeScript/ Tailwind /Shadcn/ui',
 		},
 		githubLink: 'https://github.com/praiseitodo57-cell/task-flow-client',
 		liveDemo: 'https://task-flow-client-peach.vercel.app/',
@@ -56,8 +53,7 @@ export const projectsData = [
 		img: UIImage2,
 		ProjectHeader: {
 			title: 'Luxury-Time',
-			publishDate: 'Oct 10, 2021',
-			tags: 'UI / Frontend',
+			tags: 'Next.js / TypeScript/ Tailwind /Supabase',
 		},
 		githubLink: 'https://github.com/praiseitodo57-cell/luxury-Time',
 		liveDemo: 'https://luxury-timecom.vercel.app',
@@ -69,8 +65,7 @@ export const projectsData = [
 		img: MobileImage1,
 		ProjectHeader: {
 			title: 'Fintech website',
-			publishDate: 'Nov 22, 2021',
-			tags: 'Mobile / React Native',
+			tags: 'Next.js / TypeScript/ Tailwind ',
 		},
 		githubLink: 'https://github.com/praiseitodo57-cell/Sasly',
 		liveDemo: 'https://saslycom.vercel.app',
@@ -82,8 +77,8 @@ export const projectsData = [
 		img: WebImage3,
 		ProjectHeader: {
 			title: 'TECH INSTITUTION WEBSITE',
-			publishDate: 'Dec 5, 2021',
-			tags: 'UI / Frontend',
+			
+			tags: 'Next.js / TypeScript/ Tailwind /Frontend',
 		},
 		githubLink: 'https://github.com/praiseitodo57-cell/spraditech',
 		liveDemo: 'https://spraditech-pied.vercel.app',
@@ -96,8 +91,8 @@ export const projectsData = [
 		img: WebImage2,
 		ProjectHeader: {
 			title: 'laundry/dry-cleaning website',
-			publishDate: 'Dec 5, 2021',
-			tags: 'UI / Frontend',
+			
+			tags: 'React / Frontend',
 		},
 		githubLink: 'https://github.com/praiseitodo57-cell/spraditech',
 		liveDemo: 'https://deeclean-fresh-laundry.lovable.app',
@@ -110,8 +105,8 @@ export const projectsData = [
 		img: UIImage3,
 		ProjectHeader: {
 			title: 'Holex Chat Bot',
-			publishDate: 'Dec 5, 2021',
-			tags: 'UI / Frontend',
+			
+			tags: 'React / Gemini AI Api / Tailwind CSS',
 		},
 		githubLink: 'https://github.com/praiseitodo57-cell/Holex_chat_bot',
 		liveDemo: 'https://holex-chat-bot.vercel.app',
@@ -124,8 +119,8 @@ export const projectsData = [
 		img: UIImage4,
 		ProjectHeader: {
 			title: 'Stock Tracker',
-			publishDate: 'Dec 5, 2021',
-			tags: 'UI / Frontend',
+			
+			tags: 'React / Alpha Vantage API / Recharts'
 		},
 		githubLink: 'https://github.com/praiseitodo57-cell/Stock_Traker',
 		liveDemo: 'https://stock-traker-pearl.vercel.app',
